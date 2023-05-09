@@ -6,6 +6,10 @@ post_button_text:
   type: string
   default: "Post"
   description: "Text displayed on Post button"
+showcase_title_text:
+  type: string
+  default: "Recent Discussions"
+  description: "Text displayed on showcase title"
 feed_list:
   placeholder: "Title, List length, Filter, Tag, Category id, Link, solved"
   client: true
