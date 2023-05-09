@@ -1,9 +1,11 @@
 <div class="showcase-title">
-<h3>{{theme-setting "showcase_title_text"}}</h3>
+  <h3>{{theme-setting "showcase_title_text"}}</h3>
 </div>
+<div class="showcase-main">
 {{#conditional-loading-spinner condition=isLoading}}
   {{topic-list topics=topicList showPosters=true}}
 {{/conditional-loading-spinner}}
+</div>
 <div class="bottom-wrapper">
     <a href="{{data.link}}" class="feed-link">{{moreTopicsButtonText}}</a>
 </div>
