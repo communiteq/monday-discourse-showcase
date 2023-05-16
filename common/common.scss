@@ -32,9 +32,6 @@
         border: none;
         .topic-list-item {
           min-height: 70px;
-          &:nth-child(odd) {
-            background: var(--primary-very-low);
-          }
           .main-link {
             .link-bottom-line {
               .badge-wrapper {
