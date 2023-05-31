@@ -25,3 +25,8 @@ plugin_outlet:
     - "below-site-header"
     - "discovery-list-container-top"
   description: "Advanced layout setting"
+category_filter:
+  type: list
+  list_type: category
+  default: ""
+  description: "Choose which categories are being shown."
