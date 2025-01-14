@@ -1,6 +1,8 @@
 {
   "name": "Recent Discussions",
-  "about_url": null,
   "license_url": null,
-  "component": true
+  "component": true,
+  "about_url": "https://www.communiteq.com/",
+  "authors": "Communiteq / Manuel Kostka",
+  "theme_version": "2025.01.14"
 }
