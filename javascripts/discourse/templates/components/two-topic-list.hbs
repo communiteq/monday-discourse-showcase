@@ -1,6 +1,6 @@
-{{#if showTopicLists}}
+{{#if this.showTopicLists}}
 <div class="custom-homepage-columns">
-  {{#each list as |item|}}
+  {{#each this.list as |item|}}
     {{versatile-showcase data=item classNames=item.classes}}
   {{/each}}
 </div>
