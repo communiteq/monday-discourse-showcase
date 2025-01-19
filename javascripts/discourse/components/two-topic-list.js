@@ -28,7 +28,9 @@ export default Component.extend({
   },
 
   get list() {
-    if(settings.feed_list <= 0) return [];
+    if(settings.feed_list <= 0) {
+      return [];
+    }
 
     const list_data = settings.feed_list.split("|").map((item, index) => {
       const classes = ["col", `col-${index}`];
@@ -45,7 +47,7 @@ export default Component.extend({
         length: data[1].trim(),
         filter: data[2].trim(),
         tag: data[3].trim(),
-        category: Category.findById(data[4].trim()),
+        category: Category.findById(parseInt(data[4].trim(), 10)),
         link: data[5].trim(),
         solved: data.length > 6 ? data[6].trim() : null,
         classes: classes.join(" ")
