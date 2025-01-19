@@ -30,7 +30,6 @@ export default Component.extend({
     this.store.findFiltered("topicList", filter).then((topicList) => {
       if (settings.category_filter != '') {
         var categoryIds = settings.category_filter.split('|').map(Number);
-        console.log(categoryIds);
         var filteredTopics = topicList.topics.filter(topic => categoryIds.includes(topic.category_id)).slice(0, this.data.length);
       } else {
         var filteredTopics = topicList.topics.slice(0, this.data.length);
